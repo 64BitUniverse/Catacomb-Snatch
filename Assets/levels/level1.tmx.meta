@@ -10,12 +10,22 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
   errors: []
-  warnings: []
+  warnings:
+  - Pixels Per Unit mismatch between map (100) and tileset 'tiled/tilesets/Tileset-Floor.tsx'
+    (24)
+  - Pixels Per Unit mismatch between map (100) and tileset 'tiled/tilesets/Tileset-Overlay.tsx'
+    (24)
+  - Pixels Per Unit mismatch between map (100) and tileset 'tiled/tilesets/Tileset-Wall.tsx'
+    (24)
+  - Pixels Per Unit mismatch between map (100) and tileset 'tiled/tilesets/Tileset-Player1.tsx'
+    (24)
+  - Pixels Per Unit mismatch between map (100) and tileset 'tiled/tilesets/Tileset-Player2.tsx'
+    (24)
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 21
-  pixelsPerUnit: 100
+  pixelsPerUnit: 24
   edgesPerEllipse: 32
   numberOfObjectsImported: 2
   tilesAsObjects: 0
