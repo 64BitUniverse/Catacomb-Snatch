@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cb03k3l5txjhu"
+path="res://.godot/imported/Big Gem.wav-b36d9299ba19effac4b2338774bada52.sample"
+
+[deps]
+
+source_file="res://resources/sound/Big Gem.wav"
+dest_files=["res://.godot/imported/Big Gem.wav-b36d9299ba19effac4b2338774bada52.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

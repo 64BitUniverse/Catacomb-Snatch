@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bn0dvv344yj5c"
+path="res://.godot/imported/Background 1.ogg-56cdd745b3280914cc51fffe575e9369.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/sound/Background 1.ogg"
+dest_files=["res://.godot/imported/Background 1.ogg-56cdd745b3280914cc51fffe575e9369.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
