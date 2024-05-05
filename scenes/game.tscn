@@ -9,7 +9,8 @@
 
 [node name="Lard" parent="." instance=ExtResource("1_lujaf")]
 position = Vector2(1016, 1493)
+speed = null
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1015, 1487)
+[node name="Camera2D" type="Camera2D" parent="Lard"]
+position = Vector2(-1, -6)
 zoom = Vector2(4, 4)

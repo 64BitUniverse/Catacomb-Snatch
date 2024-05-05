@@ -1,57 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://1k8rug1t82ld"]
+[gd_scene load_steps=4 format=3 uid="uid://1k8rug1t82ld"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_a76ov"]
-[ext_resource type="Texture2D" uid="uid://c7m6shpma0qnp" path="res://assets/resources/player/Lard/lord_lard_sheet_idle.png" id="1_xykcg"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0mllb"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bwws1"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gg84s"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_43rtx"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m1wdd"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_djtmn"]
-atlas = ExtResource("1_xykcg")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6q40f"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0mllb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bwws1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gg84s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_43rtx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m1wdd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_djtmn")
-}],
-"loop": true,
-"name": &"IdleFront",
-"speed": 4.0
-}]
+[ext_resource type="SpriteFrames" uid="uid://d4i7mg1afm87l" path="res://assets/resources/player/Lard/lard.tres" id="2_htj02"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c06w4"]
 size = Vector2(14, 24)
@@ -60,9 +10,9 @@ size = Vector2(14, 24)
 script = ExtResource("1_a76ov")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_6q40f")
-animation = &"IdleFront"
-autoplay = "IdleFront"
+sprite_frames = ExtResource("2_htj02")
+animation = &"IdleHoldRight"
+frame_progress = 0.436516
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
