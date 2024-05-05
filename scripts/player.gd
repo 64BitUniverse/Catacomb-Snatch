@@ -3,10 +3,10 @@ extends CharacterBody2D
 @export var speed = 130
 @onready var _animated_sprite = $AnimatedSprite2D
 
-var look = Vector2()
-look.x = get_global_mouse_position() - position
+var look: get_global_mouse_position() - position
+
 func get_input():
-	print(look.normalized)
+	print()
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	velocity = input_direction * speed
 
