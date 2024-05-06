@@ -3,8 +3,6 @@ extends CharacterBody2D
 @export var speed = 130
 @onready var _animated_sprite = $AnimatedSprite2D
 
-var look: get_global_mouse_position() - position
-
 func get_input():
 	print()
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -19,7 +17,8 @@ func _process(delta):
 		_animated_sprite.play("Left")
 	elif (get_global_mouse_position() - position) < Vector2(0, -0):
 		_animated_sprite.play("Up")
-	#elif (get_global_mouse_position() - position) > Vector2()
+	elif (get_global_mouse_position() - position) < Vector2(-0, -0):
+		_animated_sprite.play("Down")
 
 
 
