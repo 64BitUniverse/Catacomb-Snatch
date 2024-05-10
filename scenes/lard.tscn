@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://1k8rug1t82ld"]
+[gd_scene load_steps=5 format=3 uid="uid://1k8rug1t82ld"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_a76ov"]
 [ext_resource type="SpriteFrames" uid="uid://d4i7mg1afm87l" path="res://assets/resources/player/Lard/lard.tres" id="2_htj02"]
@@ -6,14 +6,22 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c06w4"]
 size = Vector2(14, 24)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_40smn"]
+radius = 115.0
+
 [node name="Lard" type="CharacterBody2D"]
 script = ExtResource("1_a76ov")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_htj02")
-animation = &"IdleHoldRight"
-frame_progress = 0.436516
+animation = &"Right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Hit" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_c06w4")
+
+[node name="Coin vac" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin vac"]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_40smn")

@@ -794,7 +794,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Back",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -817,7 +817,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"BackLeft",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -840,7 +840,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"BackRight",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -863,7 +863,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Front",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -886,7 +886,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"FrontLeft",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -909,7 +909,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"FrontRight",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -932,7 +932,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldBack",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -955,7 +955,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldBackLeft",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -978,7 +978,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldBackRight",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1001,7 +1001,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldFront",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1024,7 +1024,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldFrontLeft",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1047,7 +1047,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldFrontRight",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1070,7 +1070,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldLeft",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1093,7 +1093,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HoldRight",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
