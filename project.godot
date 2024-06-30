@@ -13,7 +13,11 @@ config_version=5
 config/name="Catacomb-Snatch"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://icon64.png"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/SimpleTODO/plugin.cfg")
 
 [input]
 

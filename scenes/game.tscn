@@ -9,6 +9,7 @@
 [node name="level1" parent="." instance=ExtResource("1_vhevb")]
 
 [node name="Lard" parent="." instance=ExtResource("1_lujaf")]
+top_level = true
 position = Vector2(1008, 1487)
 
 [node name="Camera2D" type="Camera2D" parent="Lard"]
