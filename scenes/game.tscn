@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://clhn15cf2hser"]
+
+[ext_resource type="PackedScene" uid="uid://1k8rug1t82ld" path="res://scenes/lard.tscn" id="1_lujaf"]
+[ext_resource type="PackedScene" uid="uid://b131fkeqsxhtx" path="res://scenes/level1.tscn" id="1_vhevb"]
+[ext_resource type="PackedScene" uid="uid://e0fder5q4nwj" path="res://scenes/turret.tscn" id="3_gnt6f"]
+
+[node name="Game" type="Node2D"]
+
+[node name="level1" parent="." instance=ExtResource("1_vhevb")]
+
+[node name="Lard" parent="." instance=ExtResource("1_lujaf")]
+top_level = true
+position = Vector2(1008, 1487)
+
+[node name="Camera2D" type="Camera2D" parent="Lard"]
+position = Vector2(-1, -6)
+zoom = Vector2(4, 4)
+
+[node name="Turret" parent="." instance=ExtResource("3_gnt6f")]
+position = Vector2(1488, 1519)

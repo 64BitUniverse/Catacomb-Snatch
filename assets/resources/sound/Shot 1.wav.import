@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlx3hsvabnfmd"
+path="res://.godot/imported/Shot 1.wav-71d2ff94ef3b9c0631ab5b65cd30e620.sample"
+
+[deps]
+
+source_file="res://assets/resources/sound/Shot 1.wav"
+dest_files=["res://.godot/imported/Shot 1.wav-71d2ff94ef3b9c0631ab5b65cd30e620.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
