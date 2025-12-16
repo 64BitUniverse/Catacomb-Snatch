@@ -1,0 +1,21 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+    },
+    "last.imagePath": "/home/jacob/Documents/Catacomb-Snatch/assets/resources/map",
+    "map.height": 64,
+    "map.layerDataFormat": "3",
+    "map.width": 64,
+    "openFiles": [
+    ],
+    "project": "MapsFromScratch.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}
