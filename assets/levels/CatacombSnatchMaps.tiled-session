@@ -5,8 +5,8 @@
     },
     "activeFile": "level1.tmx",
     "expandedProjectPaths": [
-        ".",
-        "tilemaps"
+        "tilemaps",
+        "."
     ],
     "fileStates": {
         "AsymeTrical.tmx": {
@@ -21,22 +21,28 @@
             "scale": 1.7127,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1023.822035382729,
-                "y": 941.7878204005372
+                "x": 1023.8220353827289,
+                "y": 939.7442634436854
             }
         },
         "CataBOMB.tmx": {
             "scale": 1.6106,
             "selectedLayer": 0,
             "viewCenter": {
+<<<<<<< HEAD
                 "x": 1023.5316031292687,
                 "y": 936.2970321619273
+=======
+                "x": 1024.1524897553709,
+                "y": 934.744815596672
+>>>>>>> 47322ea6 (Changes to bullet behaviour)
             }
         },
         "RailRoads.tmx": {
             "scale": 0.3038330078125,
             "selectedLayer": 0,
             "viewCenter": {
+<<<<<<< HEAD
                 "x": 1021.9429489754921,
                 "y": 1023.5885897950984
             }
@@ -47,6 +53,18 @@
             "viewCenter": {
                 "x": 921.520675855936,
                 "y": 1012.6722987994664
+=======
+                "x": 1025.2342306147045,
+                "y": 1025.2342306147048
+            }
+        },
+        "level1.tmx": {
+            "scale": 0.5686,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 933.8726697150896,
+                "y": 1055.2233556102708
+>>>>>>> 47322ea6 (Changes to bullet behaviour)
             }
         },
         "tiled/tilesets/Tileset-Floor.tsx": {
