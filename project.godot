@@ -12,12 +12,23 @@ config_version=5
 
 config/name="Catacomb-Snatch"
 run/main_scene="res://scenes/game.tscn"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://icon.svg"
+=======
+>>>>>>> daa75bc3 (Changes to bullet behaviour)
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon64.png"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/SimpleTODO/plugin.cfg")
+<<<<<<< HEAD
+=======
+>>>>>>> 47322ea6 (Changes to bullet behaviour)
+>>>>>>> daa75bc3 (Changes to bullet behaviour)
 
 [input]
 
