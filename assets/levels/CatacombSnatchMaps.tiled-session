@@ -31,12 +31,19 @@
             "viewCenter": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+                "x": 1024.1524897553709,
+                "y": 934.744815596672
+=======
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
+<<<<<<< HEAD
                 "x": 1023.5316031292687,
                 "y": 936.2970321619273
 =======
                 "x": 1024.1524897553709,
                 "y": 934.744815596672
 >>>>>>> 47322ea6 (Changes to bullet behaviour)
+<<<<<<< HEAD
 =======
                 "x": 1024.1524897553709,
                 "y": 934.744815596672
@@ -50,6 +57,9 @@
 >>>>>>> 47322ea6 (Changes to bullet behaviour)
 >>>>>>> daa75bc3 (Changes to bullet behaviour)
 >>>>>>> 99fbe5a7 (Changes to bullet behaviour)
+=======
+>>>>>>> daa75bc3 (Changes to bullet behaviour)
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
             }
         },
         "RailRoads.tmx": {
@@ -58,14 +68,22 @@
             "viewCenter": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+                "x": 1025.2342306147045,
+                "y": 1025.2342306147048
+=======
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
+<<<<<<< HEAD
                 "x": 1021.9429489754921,
                 "y": 1023.5885897950984
+>>>>>>> daa75bc3 (Changes to bullet behaviour)
             }
         },
         "level1.tmx": {
-            "scale": 0.4498,
+            "scale": 0.5686,
             "selectedLayer": 2,
             "viewCenter": {
+<<<<<<< HEAD
 =======
                 "x": 1025.2342306147045,
                 "y": 1025.2342306147048
@@ -80,11 +98,16 @@
             "scale": 0.5686,
             "selectedLayer": 2,
             "viewCenter": {
+=======
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
 <<<<<<< HEAD
                 "x": 933.8726697150896,
                 "y": 1055.2233556102708
 =======
+<<<<<<< HEAD
 >>>>>>> 99fbe5a7 (Changes to bullet behaviour)
+=======
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
                 "x": 921.520675855936,
                 "y": 1012.6722987994664
 =======
@@ -100,9 +123,13 @@
                 "y": 1055.2233556102708
 >>>>>>> 47322ea6 (Changes to bullet behaviour)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> daa75bc3 (Changes to bullet behaviour)
 >>>>>>> 99fbe5a7 (Changes to bullet behaviour)
+=======
+>>>>>>> daa75bc3 (Changes to bullet behaviour)
+>>>>>>> 99fbe5a795b782155ad26ec4c8c4f4ae4de9e9af
             }
         },
         "tiled/tilesets/Tileset-Floor.tsx": {
