@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://h4nftvxswjqf"]
+
+[ext_resource type="Texture2D" uid="uid://b8oglfu8lax6o" path="res://assets/resources/effects/bullet.png" id="1_l5glv"]
+[ext_resource type="Script" uid="uid://w51ms88qvf6j" path="res://scripts/bullet.gd" id="1_y25gk"]
+
+[node name="Bullet" type="Sprite2D"]
+texture = ExtResource("1_l5glv")
+region_enabled = true
+region_rect = Rect2(96, 0, 16, 16)
+script = ExtResource("1_y25gk")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-7, 0)
+target_position = Vector2(14, 0)
+hit_from_inside = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
