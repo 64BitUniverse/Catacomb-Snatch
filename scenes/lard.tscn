@@ -15,25 +15,25 @@ script = ExtResource("1_a76ov")
 
 [node name="Character" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_htj02")
-animation = &"IdleRight"
+animation = &"Back"
+
+[node name="MuzzleSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-13, -1)
+sprite_frames = ExtResource("3_vyeqr")
+frame = 4
+frame_progress = 1.0
 
 [node name="Hit" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_c06w4")
 
 [node name="Coin vac" type="Area2D" parent="."]
-visible = false
+position = Vector2(0, 2.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coin vac"]
 shape = SubResource("CircleShape2D_40smn")
 
 [node name="RotationTrack" type="Node2D" parent="."]
-position = Vector2(12, 5)
-
-[node name="MuzzleSprite" type="AnimatedSprite2D" parent="RotationTrack"]
-position = Vector2(3, 0)
-sprite_frames = ExtResource("3_vyeqr")
-frame = 4
-frame_progress = 1.0
 
 [node name="MuzzleSpawn" type="Marker2D" parent="RotationTrack"]
+position = Vector2(12, 6)

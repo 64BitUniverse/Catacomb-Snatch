@@ -1185,7 +1185,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"IdleFront",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1484,7 +1484,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Left",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1507,5 +1507,5 @@ animations = [{
 }],
 "loop": true,
 "name": &"Right",
-"speed": 8.0
+"speed": 10.0
 }]

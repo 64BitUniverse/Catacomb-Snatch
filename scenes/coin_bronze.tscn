@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://by3wdew2iwhb7"]
+
+[ext_resource type="Texture2D" uid="uid://bnlf5bhwdudpr" path="res://assets/resources/pickup/pickup_coin_bronze_16.png" id="1_0srqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmgug"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7twto"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p33fc"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2kat"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0wp6"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcl7h"]
+atlas = ExtResource("1_0srqi")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_un12i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmgug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7twto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p33fc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2kat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0wp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcl7h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
+
+[node name="Bronze Coin" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_un12i")
+frame_progress = 0.0904423
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)
+hit_from_inside = true
+metadata/CoinType = "Bronze"
