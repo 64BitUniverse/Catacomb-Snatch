@@ -137,6 +137,9 @@ sources/1 = SubResource("TileSetAtlasSource_1")
 sources/2 = SubResource("TileSetAtlasSource_2")
 
 [node name="Game" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="floor" type="TileMapLayer" parent="."]
@@ -166,3 +169,5 @@ position = Vector2(1488, 1519)
 
 [node name="Bronze Coin" parent="." instance=ExtResource("6_p57ef")]
 position = Vector2(1139, 1513)
+
+[connection signal="coin_destruct" from="GameManager" to="Lard" method="_on_game_manager_coin_destruct"]

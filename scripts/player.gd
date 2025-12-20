@@ -2,13 +2,17 @@ extends CharacterBody2D
 
 const IS_PLAYER = true
 
+@onready var GameManager = %GameManager
 @onready var _character = $Character
+#onready var hit_as_ref = $Hit
 @onready var MuzzleVec2: Vector2 = Vector2()
 @onready var MuzzleOffset: Vector2 = Vector2() # GLOBAL REFERENCE (global_position). DO NOT COMPARE TO SCENE.
 @onready var MuzzleSprite: AnimatedSprite2D = $MuzzleSprite
 @onready var RotationTrack: Node2D = $RotationTrack
 @onready var MuzzleSpawn: Marker2D = $RotationTrack/MuzzleSpawn
 @onready var CoinVac: Area2D = $"CoinVac"
+@onready var CoinParticles: CPUParticles2D = $"BigShine"
+@onready var CoinParticlesS: CPUParticles2D = $"SmallShine"
 
 var bullet_default = preload("res://scenes/bullet.tscn")
 var coin_bronze = preload("res://scenes/coin_bronze.tscn")
@@ -81,11 +85,5 @@ func shoot():
 	
 func _physics_process(delta):
 	RotationTrack.rotation = lerp_angle(RotationTrack.rotation, (get_global_mouse_position() - global_position).angle(), 6.5*delta)
-
 	get_input()
 	move_and_slide()
-
-
-func _on_coin_vac_area_entered(area):
-	#if area.name == "BronzeCoin":
-	pass	
