@@ -27,10 +27,12 @@ frame_progress = 1.0
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_c06w4")
 
-[node name="Coin vac" type="Area2D" parent="."]
+[node name="CoinVac" type="Area2D" parent="."]
 position = Vector2(0, 2.5)
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin vac"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoinVac"]
 shape = SubResource("CircleShape2D_40smn")
 
 [node name="RotationTrack" type="Node2D" parent="."]

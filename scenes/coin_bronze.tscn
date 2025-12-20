@@ -1,34 +1,39 @@
-[gd_scene load_steps=9 format=3 uid="uid://by3wdew2iwhb7"]
+[gd_scene load_steps=10 format=3 uid="uid://by3wdew2iwhb7"]
 
 [ext_resource type="Texture2D" uid="uid://bnlf5bhwdudpr" path="res://assets/resources/pickup/pickup_coin_bronze_16.png" id="1_0srqi"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tmgug"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_0srqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0srqi"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7twto"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmgug"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p33fc"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7twto"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g2kat"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p33fc"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w0wp6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2kat"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(64, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pcl7h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0wp6"]
 atlas = ExtResource("1_0srqi")
 region = Rect2(80, 0, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_un12i"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_pcl7h"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0srqi")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tmgug")
 }, {
@@ -43,18 +48,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_w0wp6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pcl7h")
 }],
 "loop": true,
 "name": &"default",
 "speed": 18.0
 }]
 
-[node name="Bronze Coin" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_un12i")
-frame_progress = 0.0904423
+[node name="Bronze Coin" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0srqi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pcl7h")
+frame = 2
+frame_progress = 0.611848
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, 0)

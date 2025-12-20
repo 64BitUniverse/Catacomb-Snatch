@@ -11,6 +11,7 @@ const IS_PLAYER = true
 @onready var MuzzleSprite: AnimatedSprite2D = $MuzzleSprite
 @onready var RotationTrack: Node2D = $RotationTrack
 @onready var MuzzleSpawn: Marker2D = $RotationTrack/MuzzleSpawn
+@onready var CoinVac: Area2D = $"CoinVac"
 
 var bullet_default = preload("res://scenes/bullet.tscn")
 var speed = 100
@@ -58,6 +59,7 @@ func _process(delta):
 		_character.play("Left")
 		MuzzleVec2 = Vector2(-14, 6)
 		MuzzleOffset = Vector2(-2,12)
+		
 func shoot():
 	if true:
 		var new_bullet = bullet_default.instantiate()
@@ -79,8 +81,17 @@ func shoot():
 		#define weapons
 		pass
 
+func coin():
+	CoinVac.gravity_point = true
+	CoinVac.gravity = 980.0
+	if velocity > Vector2(0, 0):
+		CoinVac.linear_damp = -1
+	else:
+		CoinVac.linear_damp = -0.1
+	
 func _physics_process(delta):
 	RotationTrack.rotation = lerp_angle(RotationTrack.rotation, (get_global_mouse_position() - global_position).angle(), 6.5*delta)
 
 	get_input()
 	move_and_slide()
+	coin()

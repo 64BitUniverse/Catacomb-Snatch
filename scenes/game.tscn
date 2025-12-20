@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://clhn15cf2hser"]
+[gd_scene load_steps=11 format=4 uid="uid://clhn15cf2hser"]
 
 [ext_resource type="Texture2D" uid="uid://cm6uecthelbth" path="res://assets/resources/map/floortiles.tres" id="1_iywne"]
 [ext_resource type="PackedScene" uid="uid://1k8rug1t82ld" path="res://scenes/lard.tscn" id="1_lujaf"]
 [ext_resource type="Texture2D" uid="uid://df0uhogvof2sk" path="res://assets/resources/map/treasure.tres" id="2_p57ef"]
 [ext_resource type="PackedScene" uid="uid://e0fder5q4nwj" path="res://scenes/turret.tscn" id="3_gnt6f"]
 [ext_resource type="Texture2D" uid="uid://dodc5l7kqqaex" path="res://assets/resources/map/walltiles.tres" id="3_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://by3wdew2iwhb7" path="res://scenes/coin_bronze.tscn" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0"]
 resource_name = "floortiles"
@@ -160,3 +161,6 @@ zoom = Vector2(4, 4)
 
 [node name="Turret" parent="." instance=ExtResource("3_gnt6f")]
 position = Vector2(1488, 1519)
+
+[node name="Bronze Coin" parent="." instance=ExtResource("6_p57ef")]
+position = Vector2(1139, 1513)
