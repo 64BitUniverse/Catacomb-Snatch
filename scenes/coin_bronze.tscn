@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://by3wdew2iwhb7"]
+[gd_scene load_steps=11 format=3 uid="uid://by3wdew2iwhb7"]
 
 [ext_resource type="Texture2D" uid="uid://bnlf5bhwdudpr" path="res://assets/resources/pickup/pickup_coin_bronze_16.png" id="1_0srqi"]
+[ext_resource type="Script" uid="uid://dy204cjsg6m5w" path="res://scripts/bronzecoin.gd" id="1_tmgug"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0srqi"]
 
@@ -54,17 +55,19 @@ animations = [{
 "speed": 18.0
 }]
 
-[node name="Bronze Coin" type="Area2D"]
+[node name="BronzeCoin" type="Area2D"]
+script = ExtResource("1_tmgug")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_0srqi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pcl7h")
-frame = 2
-frame_progress = 0.611848
+autoplay = "default"
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, 0)
 hit_from_inside = true
 metadata/CoinType = "Bronze"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

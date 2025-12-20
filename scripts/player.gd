@@ -4,16 +4,14 @@ const IS_PLAYER = true
 
 @onready var _character = $Character
 @onready var MuzzleVec2: Vector2 = Vector2()
-
-# GLOBAL REFERENCE (global_position). DO NOT COMPARE TO SCENE.
-@onready var MuzzleOffset: Vector2 = Vector2()
-
+@onready var MuzzleOffset: Vector2 = Vector2() # GLOBAL REFERENCE (global_position). DO NOT COMPARE TO SCENE.
 @onready var MuzzleSprite: AnimatedSprite2D = $MuzzleSprite
 @onready var RotationTrack: Node2D = $RotationTrack
 @onready var MuzzleSpawn: Marker2D = $RotationTrack/MuzzleSpawn
 @onready var CoinVac: Area2D = $"CoinVac"
 
 var bullet_default = preload("res://scenes/bullet.tscn")
+var coin_bronze = preload("res://scenes/coin_bronze.tscn")
 var speed = 100
 
 func get_input():
@@ -80,18 +78,14 @@ func shoot():
 		#For plasma bullets. Need to have a value in player to
 		#define weapons
 		pass
-
-func coin():
-	CoinVac.gravity_point = true
-	CoinVac.gravity = 980.0
-	if velocity > Vector2(0, 0):
-		CoinVac.linear_damp = -1
-	else:
-		CoinVac.linear_damp = -0.1
 	
 func _physics_process(delta):
 	RotationTrack.rotation = lerp_angle(RotationTrack.rotation, (get_global_mouse_position() - global_position).angle(), 6.5*delta)
 
 	get_input()
 	move_and_slide()
-	coin()
+
+
+func _on_coin_vac_area_entered(area):
+	#if area.name == "BronzeCoin":
+	pass	

@@ -39,3 +39,5 @@ shape = SubResource("CircleShape2D_40smn")
 
 [node name="MuzzleSpawn" type="Marker2D" parent="RotationTrack"]
 position = Vector2(12, 6)
+
+[connection signal="area_entered" from="CoinVac" to="." method="_on_coin_vac_area_entered"]

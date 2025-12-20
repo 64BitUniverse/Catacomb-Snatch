@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=4 uid="uid://clhn15cf2hser"]
+[gd_scene load_steps=12 format=4 uid="uid://clhn15cf2hser"]
 
 [ext_resource type="Texture2D" uid="uid://cm6uecthelbth" path="res://assets/resources/map/floortiles.tres" id="1_iywne"]
 [ext_resource type="PackedScene" uid="uid://1k8rug1t82ld" path="res://scenes/lard.tscn" id="1_lujaf"]
+[ext_resource type="Script" uid="uid://bvdtldjjirwjf" path="res://scripts/game.gd" id="1_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://df0uhogvof2sk" path="res://assets/resources/map/treasure.tres" id="2_p57ef"]
 [ext_resource type="PackedScene" uid="uid://e0fder5q4nwj" path="res://scenes/turret.tscn" id="3_gnt6f"]
 [ext_resource type="Texture2D" uid="uid://dodc5l7kqqaex" path="res://assets/resources/map/walltiles.tres" id="3_u5sy4"]
@@ -136,6 +137,7 @@ sources/1 = SubResource("TileSetAtlasSource_1")
 sources/2 = SubResource("TileSetAtlasSource_2")
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_u5sy4")
 
 [node name="floor" type="TileMapLayer" parent="."]
 use_parent_material = true
