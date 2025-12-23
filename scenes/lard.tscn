@@ -1,110 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://1k8rug1t82ld"]
+[gd_scene load_steps=10 format=3 uid="uid://1k8rug1t82ld"]
 
 [ext_resource type="Script" uid="uid://dq72d1mxjp80k" path="res://scripts/player.gd" id="1_a76ov"]
 [ext_resource type="SpriteFrames" uid="uid://d4i7mg1afm87l" path="res://assets/resources/player/Lard/lard.tres" id="2_htj02"]
 [ext_resource type="SpriteFrames" uid="uid://bbpycj1ftte" path="res://assets/resources/effects/muzzle.tres" id="3_vyeqr"]
 [ext_resource type="Texture2D" uid="uid://c5octhtvcvt8d" path="res://assets/resources/pickup/effect_shine_big_13.png" id="4_86k7n"]
-[ext_resource type="Texture2D" uid="uid://d1bbddktlg0jv" path="res://assets/resources/pickup/effect_shine_small_13.png" id="5_pablv"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_86k7n"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(0, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pablv"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(13, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bp4r4"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(26, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4f8gn"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(39, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wayyq"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(52, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yxdky"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(65, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_no8nq"]
-atlas = ExtResource("4_86k7n")
-region = Rect2(78, 0, 13, 13)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_4iwb0"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_86k7n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pablv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bp4r4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4f8gn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wayyq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yxdky")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_no8nq")
-}],
-"loop": true,
-"name": &"default",
-"speed": 6.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4iwb0"]
-atlas = ExtResource("5_pablv")
-region = Rect2(0, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5f7h5"]
-atlas = ExtResource("5_pablv")
-region = Rect2(13, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qsw6x"]
-atlas = ExtResource("5_pablv")
-region = Rect2(26, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ati3r"]
-atlas = ExtResource("5_pablv")
-region = Rect2(39, 0, 13, 13)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d267i"]
-atlas = ExtResource("5_pablv")
-region = Rect2(52, 0, 13, 13)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_5k2co"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4iwb0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5f7h5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qsw6x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ati3r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d267i")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c06w4"]
 size = Vector2(14, 25)
@@ -112,65 +11,21 @@ size = Vector2(14, 25)
 [sub_resource type="CircleShape2D" id="CircleShape2D_40smn"]
 radius = 115.0
 
-[sub_resource type="Animation" id="Animation_pablv"]
-resource_name = "Big Shines"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BigShine:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BigShine2:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_86k7n"]
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 1
+particles_anim_loop = true
 
-[sub_resource type="Animation" id="Animation_bp4r4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BigShine:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BigShine2:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
+[sub_resource type="Curve" id="Curve_bp4r4"]
+_limits = [0.0, 100.0, 0.0, 1.0]
+_data = [Vector2(0, 50), 0.0, 0.0, 0, 1, Vector2(1, 50), 0.0, 0.0, 1, 0]
+point_count = 2
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4f8gn"]
-_data = {
-&"Big Shines": SubResource("Animation_pablv"),
-&"RESET": SubResource("Animation_bp4r4")
-}
+[sub_resource type="Curve" id="Curve_4f8gn"]
+_limits = [0.0, 17.9775, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 4.7581, 0, 1, Vector2(0.382075, 1.81796), 4.7581, 0.0, 1, 0]
+point_count = 2
 
 [node name="Lard" type="CharacterBody2D"]
 floor_constant_speed = true
@@ -185,17 +40,6 @@ position = Vector2(-13, -1)
 sprite_frames = ExtResource("3_vyeqr")
 frame = 4
 frame_progress = 1.0
-
-[node name="BigShine" type="AnimatedSprite2D" parent="."]
-visible = false
-sprite_frames = SubResource("SpriteFrames_4iwb0")
-
-[node name="BigShine2" type="AnimatedSprite2D" parent="."]
-visible = false
-sprite_frames = SubResource("SpriteFrames_4iwb0")
-
-[node name="SmallShine" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_5k2co")
 
 [node name="Hit" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
@@ -214,9 +58,29 @@ shape = SubResource("CircleShape2D_40smn")
 [node name="MuzzleSpawn" type="Marker2D" parent="RotationTrack"]
 position = Vector2(12, 6)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_4f8gn")
-}
+[node name="BigShine" type="CPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_86k7n")
+emitting = false
+amount = 2
+texture = ExtResource("4_86k7n")
+lifetime = 0.27
+one_shot = true
+use_fixed_seed = true
+seed = 2406533738
+fract_delta = false
+local_coords = true
+emission_shape = 5
+emission_points = PackedVector2Array(3, 0, -3, 0)
+emission_normals = PackedVector2Array(1, 0, -1, 1)
+emission_colors = PackedColorArray()
+initial_velocity_max = 136.75
+damping_min = 18.803
+damping_max = 18.803
+damping_curve = SubResource("Curve_bp4r4")
+scale_amount_min = 0.75
+scale_amount_max = 0.75
+anim_speed_min = 0.3
+anim_speed_max = 0.3
+anim_speed_curve = SubResource("Curve_4f8gn")
 
 [connection signal="area_entered" from="CoinVac" to="." method="_on_coin_vac_area_entered"]

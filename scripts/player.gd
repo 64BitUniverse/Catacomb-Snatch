@@ -87,3 +87,6 @@ func _physics_process(delta):
 	RotationTrack.rotation = lerp_angle(RotationTrack.rotation, (get_global_mouse_position() - global_position).angle(), 6.5*delta)
 	get_input()
 	move_and_slide()
+	
+func _on_game_manager_coin_destruct():
+	CoinParticles.emitting = true
