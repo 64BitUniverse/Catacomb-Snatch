@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://bnquaq3n2olvk"]
+
+[ext_resource type="Script" uid="uid://3elapujxgqod" path="res://scripts/pickups/bronzecoinsmall.gd" id="1_l3og0"]
+[ext_resource type="Texture2D" uid="uid://3l2fhog5f1pa" path="res://assets/resources/pickup/pickup_coin_bronze_small_8.png" id="2_l3og0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0srqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qop6w"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8prl0"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edr0b"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afl55"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwye1"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(32, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_417xb"]
+atlas = ExtResource("2_l3og0")
+region = Rect2(40, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ct83"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qop6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8prl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edr0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afl55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwye1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_417xb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BronzeCoinS" type="Area2D"]
+script = ExtResource("1_l3og0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0srqi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6ct83")
+autoplay = "default"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)
+hit_from_inside = true
+metadata/CoinType = "Bronze"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,29 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bev1re7yenpun"]
+
+[ext_resource type="Texture2D" uid="uid://cwdgysc18ggwx" path="res://assets/resources/player/Cruller/start_cruller.png" id="1_23w4i"]
+[ext_resource type="Texture2D" uid="uid://cu18h24c7sd5w" path="res://assets/resources/player/Cruller/start_cruller_left.png" id="2_7bf1j"]
+[ext_resource type="Texture2D" uid="uid://ch6gbx47ueve1" path="res://assets/resources/player/Cruller/start_cruller_right.png" id="3_hn0t7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q7u05"]
+texture = ExtResource("1_23w4i")
+texture_region_size = Vector2i(97, 65)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-32, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_db6fh"]
+texture = ExtResource("2_7bf1j")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ntavi"]
+texture = ExtResource("3_hn0t7")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_q7u05")
+sources/1 = SubResource("TileSetAtlasSource_db6fh")
+sources/2 = SubResource("TileSetAtlasSource_ntavi")

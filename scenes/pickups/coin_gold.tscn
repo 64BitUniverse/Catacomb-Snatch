@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://fq45ancewfa0"]
+
+[ext_resource type="Script" uid="uid://runva4cbfdhr" path="res://scripts/pickups/goldcoin.gd" id="1_4v2m6"]
+[ext_resource type="Texture2D" uid="uid://dg7hw2nm7xufl" path="res://assets/resources/pickup/pickup_coin_gold_16.png" id="2_0rm61"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0srqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qvra"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtbuc"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg4rm"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00ejf"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2o4r"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4cfd"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcyj2"]
+atlas = ExtResource("2_0rm61")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2okit"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qvra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtbuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kg4rm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00ejf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2o4r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4cfd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lcyj2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GoldCoin" type="Area2D"]
+script = ExtResource("1_4v2m6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0srqi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2okit")
+autoplay = "default"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)
+hit_from_inside = true
+metadata/CoinType = "Bronze"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

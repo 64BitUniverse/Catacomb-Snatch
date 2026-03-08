@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://blc43ci5ah6"]
+
+[ext_resource type="Script" uid="uid://bqa3vgg3eoh0q" path="res://scripts/mobs/mummy.gd" id="1_lonbo"]
+[ext_resource type="SpriteFrames" uid="uid://yotda78lditn" path="res://assets/resources/mob/mummy.tres" id="2_m5bho"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gv7wu"]
+size = Vector2(38, 31)
+
+[node name="Mummy" type="CharacterBody2D"]
+script = ExtResource("1_lonbo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_m5bho")
+animation = &"Left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_gv7wu")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true

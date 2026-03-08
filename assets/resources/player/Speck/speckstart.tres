@@ -1,0 +1,29 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://sgv8jw0ylf3v"]
+
+[ext_resource type="Texture2D" uid="uid://bv7whvycv285d" path="res://assets/resources/player/Speck/start_herrspeck.png" id="1_n6dk0"]
+[ext_resource type="Texture2D" uid="uid://dxvw60rpe8ijd" path="res://assets/resources/player/Speck/start_herrspeck_left.png" id="2_uk585"]
+[ext_resource type="Texture2D" uid="uid://bbumq2qsm7fqc" path="res://assets/resources/player/Speck/start_herrspeck_right.png" id="3_sskfm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_udupu"]
+texture = ExtResource("1_n6dk0")
+texture_region_size = Vector2i(97, 66)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-32, 17)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r3fbj"]
+texture = ExtResource("2_uk585")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hwbn"]
+texture = ExtResource("3_sskfm")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_udupu")
+sources/1 = SubResource("TileSetAtlasSource_r3fbj")
+sources/2 = SubResource("TileSetAtlasSource_1hwbn")

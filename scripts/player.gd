@@ -3,7 +3,9 @@ extends CharacterBody2D
 const IS_PLAYER = true
 
 @onready var GameManager = %GameManager
-@onready var _character = $Character
+
+# Need to make character select logic for the different sprite
+@onready var _character = $Lard
 #onready var hit_as_ref = $Hit
 @onready var MuzzleVec2: Vector2 = Vector2()
 @onready var MuzzleOffset: Vector2 = Vector2() # GLOBAL REFERENCE (global_position). DO NOT COMPARE TO SCENE.
@@ -14,8 +16,8 @@ const IS_PLAYER = true
 @onready var CoinParticles: CPUParticles2D = $"BigShine"
 @onready var CoinParticlesS: CPUParticles2D = $"SmallShine"
 
-var bullet_default = preload("res://scenes/bullet.tscn")
-var coin_bronze = preload("res://scenes/coin_bronze.tscn")
+var bullet_default = preload("res://scenes/projectile/bullet.tscn")
+var coin_bronze = preload("res://scenes/pickups/coin_bronze.tscn")
 var speed = 100
 
 func get_input():
@@ -65,8 +67,12 @@ func _process(delta):
 func shoot():
 	if true:
 		var new_bullet = bullet_default.instantiate()
-		print(MuzzleSpawn.global_position)
+		
+		# Offset so bulles/muzzle flashes don't spawn in the player
+		# MuzzleOffset is hardcoded to where the player is facing
+		#   (look up in the elif chain above)
 		var MuzzleSpawnP = MuzzleSpawn.global_position + MuzzleOffset
+		
 		new_bullet.global_position = MuzzleSpawnP
 		new_bullet.global_rotation = MuzzleSpawn.global_rotation
 		# Bullet speed in bullet.gd

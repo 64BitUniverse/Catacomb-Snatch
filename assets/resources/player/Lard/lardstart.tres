@@ -1,0 +1,41 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://cmvfmiryhx5n5"]
+
+[ext_resource type="Texture2D" uid="uid://bfx1w40iei8x" path="res://assets/resources/player/Lard/start_lordlard.png" id="1_dspgx"]
+[ext_resource type="Texture2D" uid="uid://cx70s7mgpb8mf" path="res://assets/resources/player/Lard/start_lordlard_left.png" id="2_gb43b"]
+[ext_resource type="Texture2D" uid="uid://bqp7v7yb0h6ov" path="res://assets/resources/player/Lard/start_lordlard_right.png" id="3_dyp56"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pf5ju"]
+texture = ExtResource("1_dspgx")
+texture_region_size = Vector2i(97, 65)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-32, 16)
+0:0/1 = 1
+0:0/1/flip_v = true
+0:0/1/texture_origin = Vector2i(-32, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nykos"]
+texture = ExtResource("2_gb43b")
+texture_region_size = Vector2i(64, 96)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+0:0/1 = 1
+0:0/1/flip_v = true
+0:0/1/texture_origin = Vector2i(-16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqp5f"]
+texture = ExtResource("3_dyp56")
+texture_region_size = Vector2i(64, 96)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+0:0/1 = 1
+0:0/1/flip_v = true
+0:0/1/texture_origin = Vector2i(-16, 32)
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_pf5ju")
+sources/1 = SubResource("TileSetAtlasSource_nykos")
+sources/2 = SubResource("TileSetAtlasSource_sqp5f")

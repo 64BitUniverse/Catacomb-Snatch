@@ -1,0 +1,29 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dw0e5j4vecsn7"]
+
+[ext_resource type="Texture2D" uid="uid://2oe10mv31dv4" path="res://assets/resources/player/Donut/start_donut.png" id="1_7pk8s"]
+[ext_resource type="Texture2D" uid="uid://ckx7xwjbq32sn" path="res://assets/resources/player/Donut/start_donut_left.png" id="2_4slie"]
+[ext_resource type="Texture2D" uid="uid://c5sht2jvwuuil" path="res://assets/resources/player/Donut/start_donut_right.png" id="3_4biob"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gp8tg"]
+texture = ExtResource("1_7pk8s")
+texture_region_size = Vector2i(97, 66)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-32, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw2k6"]
+texture = ExtResource("2_4slie")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f75yu"]
+texture = ExtResource("3_4biob")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-16, 32)
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_gp8tg")
+sources/1 = SubResource("TileSetAtlasSource_iw2k6")
+sources/2 = SubResource("TileSetAtlasSource_f75yu")

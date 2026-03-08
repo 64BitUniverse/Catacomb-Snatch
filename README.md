@@ -4,4 +4,4 @@
 - Personally using [Asprite](https://www.aseprite.org/) to edit sprite sheets. Sprite sheets still png, so use whatever you want. [GIMP](https://www.gimp.org/) is a free program with a pencil function. 
 
 ##### Notes
-- My notes are located in the TODO.cfg file
+- My notes are located in the TODO.cfg file (SimpleTODO addon by KoBeWi)

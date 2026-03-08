@@ -1,0 +1,84 @@
+{
+    "activeFile": "tilemaps/wall.tsx",
+    "expandedProjectPaths": [
+        "tilemaps",
+        "."
+    ],
+    "fileStates": {
+        "level1.tmx": {
+            "scale": 6.5343,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 973.3253753271201,
+                "y": 1768.8199195017066
+            }
+        },
+        "tilemaps/cruller.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/donut.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/floor.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/lard.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/noplayer.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/speck.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/treasure.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/wall.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/home/jacob/Documents/Catacomb-Snatch/assets/levels",
+    "last.imagePath": "/home/jacob/Documents/Catacomb-Snatch/assets/resources/player/Cruller",
+    "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
+    "openFiles": [
+        "level1.tmx",
+        "tilemaps/wall.tsx",
+        "tilemaps/floor.tsx",
+        "tilemaps/noplayer.tsx",
+        "tilemaps/lard.tsx",
+        "tilemaps/speck.tsx",
+        "tilemaps/donut.tsx",
+        "tilemaps/cruller.tsx"
+    ],
+    "project": "CatacombSnatchMaps.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "level1.tmx",
+        "tilemaps/cruller.tsx",
+        "tilemaps/donut.tsx",
+        "tilemaps/speck.tsx",
+        "tilemaps/lard.tsx",
+        "tilemaps/noplayer.tsx",
+        "tilemaps/floor.tsx",
+        "tilemaps/wall.tsx",
+        "tilemaps/treasure.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}
